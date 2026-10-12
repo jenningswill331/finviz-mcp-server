@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code
 COPY src/ ./src/
-COPY pyproject.toml .
+COPY pyproject.toml README.md ./
 COPY run_server.py .
 
 # Install the package
@@ -27,4 +27,4 @@ ENV RATE_LIMIT_REQUESTS_PER_MINUTE=100
 EXPOSE 8000
 
 # Default command - use the installed entry point
-CMD ["finviz-mcp-server"]
+CMD ["python", "-m", "src.render_server"]
