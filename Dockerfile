@@ -27,4 +27,4 @@ ENV RATE_LIMIT_REQUESTS_PER_MINUTE=100
 EXPOSE 8000
 
 # Default command - use the installed entry point
-CMD ["python", "-m", "src.render_server"]
+CMD ["python", "-m", "src.oauth_server"]

@@ -38,6 +38,7 @@ classifiers = [
 
 dependencies = [
     "mcp==1.30.0",
+    "fastmcp==2.14.7",
     "requests>=2.31.0",
     "pandas>=2.0.0",
     "beautifulsoup4>=4.12.0",
